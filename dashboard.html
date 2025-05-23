@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0A192F;
+        }
+
+        .header {
+            background-color: #112240;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            text-align: center;
+            position: sticky; /* Add sticky positioning */
+            top: 0;
+            z-index: 100; /* Ensure header stays above other elements */
+        }
+
+        .dashboard {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            background-color: #112240;
+            color: white;
+            padding: 20px;
+            width: 220px;
+            position: sticky; /* Sticky Sidebar */
+            top: 50px; /* Adjust as needed */
+            height: fit-content; /* Important for sticky to work correctly */
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #444;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #64ffda;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .landscape {
+            grid-column: span 2;
+            height: auto;
+            background-color: #2E4665;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 100%;
+            height: auto;
+            margin-top: 0;
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            background-color: #4A6980;
+            border-radius: 10px;
+            height: 120px;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+            box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+            filter: brightness(1.2);
+        }
+
+        /* Absolute positioning example (for a small floating element) */
+        .floating-element {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background-color: #64ffda;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 101; /* Ensure it's above the header */
+        }
+
+        @media (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .dashboard {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .sidebar {
+                width: 100%;
+                text-align: center;
+                position: static; /* Remove sticky on small screens */
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Lozadaluis Animal Shop
+    </div>
+
+    <div class="dashboard">
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <div class="grid-container">
+                <div class="grid-item">Dog</div>
+                <div class="grid-item">Cat</div>
+                <div class="grid-item">Hamster</div>
+                <div class="grid-item">Birds</div>
+                <div class="grid-item">Fish</div>
+                <div class="grid-item">Guinea Pig</div>
+                <div class="grid-item">Adoption Services</div>
+                <div class="grid-item landscape">Follow Me!!!</div>
+            </div>
+        </div>
+    </div>
+    <div class="floating-element">
+        <p>Announcement!</p>
+    </div>
+</body>
+</html>

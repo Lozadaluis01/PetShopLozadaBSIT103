@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LozadaLuis Animal Shop</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #003366;
+            color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #0056b3;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #fff;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #e0f2f7;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #64b5f6;
+            border-radius: 5px;
+            background-color: #004080;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #003d80;
+        }
+
+        #map {
+            margin-top: 30px;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            width: 100%;
+            height: 400px;
+        }
+
+        .contact-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit">Submit →</button>
+        </form>
+        <a href="index.html" class="back-button">Back to Home</a>
+
+        <div class="map-section">
+            <h3>How to Get Here</h3>
+            <p>We're located at 2598 Singgalong Street Malate Manila via Google Maps:</p>
+
+            <!-- Corrected Map -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15439.23422152027!2d120.98428320743098!3d14.574441814468092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca2419f8d5d9%3A0x3a7ab80b0cde2e62!2s2598%20Singalong%20St%2C%20Malate%2C%20Manila%2C%201004%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1715237084111!5m2!1sen!2sph"
+                width="100%" 
+                height="400" 
+                style="border:2px solid #fff; border-radius:8px;"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+
+        <!-- Corrected image tag -->
+        <img src="map.png" alt="Pet Care" class="contact-image">
+
+        <p style="margin-top: 20px; font-size: 0.9em; color: #e0f7fa;">
+            At LozadaLuis Animal Shop, we're dedicated to providing exceptional care and services for your beloved pets.
+            Our team is passionate about animals and committed to ensuring their health and well-being.
+            We offer a wide range of products, from premium pet food to comfortable bedding and fun toys.
+            Visit us today and experience the LozadaLuis difference!
+        </p>
+    </div>
+</body>
+</html>

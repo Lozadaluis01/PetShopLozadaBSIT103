@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LozadaLuis Animal Shop</title>
+	 <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+     alert("Welcome to my website!");
+
+    });
+
+   </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #001F3F;
+            color: #FFFFFF;
+            padding-top: 120px;
+            position: relative;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #003366;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 3px solid #00509E;
+            z-index: 1001;
+        }
+
+        nav {
+            position: sticky;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background: #00509E;
+            padding: 1rem;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: #87CEFA;
+        }
+
+        nav a:active {
+            color: lightblue;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        section {
+            flex: 2;
+            padding: 20px;
+            background: #002855;
+            margin-right: 20px;
+            border-radius: 5px;
+            border: 2px solid #00509E;
+        }
+
+        aside {
+            flex: 1;
+            padding: 20px;
+            background: #002855;
+            border-radius: 5px;
+            border: 2px solid #00509E;
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+        }
+		
+	
+
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+            border-top: 3px solid #00509E;
+        }
+
+        article {
+            padding-bottom: 20px;
+            border-bottom: 2px solid #00509E;
+        }
+
+        article h3 {
+            color: #1E90FF;
+        }
+
+        a {
+            color: #1E90FF;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover,
+        a:focus {
+            color: #00BFFF;
+        }
+
+        a:active {
+            color: lightblue;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 110px;
+            }
+
+            header {
+                padding: 0.5rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            section {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            aside {
+                position: relative;
+                top: 0;
+            }
+
+            nav {
+                top: 45px;
+                padding: 0.5rem;
+            }
+
+            nav a {
+                font-size: 18px;
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        /* Fixed Follow Me Button */
+        .follow-me {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1E90FF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 1002; 
+			.follow-me:active {
+            background-color: 
+        }
+        }
+
+        .follow-me:hover {
+            background-color: #00BFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>LozadaLuis Animal Shop</h1>
+        <p>Your trusted store for pets, pet supplies, and expert care tips.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+		<a href="journal.html">Journal</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Latest Pet Care Tips</h2>
+            <article>
+                <h3>How to Choose the Perfect Pet</h3>
+                <p>Choosing the right pet depends on your lifestyle, space, and commitment. Learn which pet suits you best...</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>Top 5 Nutritious Foods for Your Pet</h3>
+                <p>Providing a balanced diet is essential for your pet’s well-being. Discover the best food options...</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>Understanding Pet Behavior</h3>
+                <p>Learn to interpret your pet's signals and create a stronger bond...</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>The Importance of Regular Vet Visits</h3>
+                <p>Preventative care is key to your pet's long and healthy life...</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>Fun and Easy Pet Training Techniques</h3>
+                <p>Make training enjoyable for both you and your furry friend...</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>Creating a Pet-Friendly Home Environment</h3>
+                <p>Ensure your home is safe and comfortable for your animal companion...</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Introduction</h2>
+            <p>At LozadaLuis Animal Shop, we are passionate about animals and dedicated to providing quality pet care products and advice.</p>
+            <h3>Popular Topics</h3>
+            <ul>
+                <li><a href="#">Best Dog Breeds for Families</a></li>
+                <li><a href="#">Essential Cat Care Tips</a></li>
+                <li><a href="#">How to Set Up an Aquarium</a></li>
+                <li><a href="#">Small Animal Care Guides</a></li>
+                <li><a href="#">Bird Keeping Basics</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LozadaLuis Animal Shop. All rights reserved.</p>
+    </footer>
+
+    <a href="#" class="follow-me">Follow Me!!</a>
+</body>
+
+</html>
